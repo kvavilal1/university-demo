@@ -20,7 +20,7 @@ public class Faculty {
 	private String first_name;
 	private String last_name;
 	private String title;
-	private String Department;
+	private String department;
 	
 	@ManyToMany(mappedBy = "faculties")
 	@JsonIgnore
@@ -83,12 +83,12 @@ public class Faculty {
 
 
 	public String getDepartment() {
-		return Department;
+		return department;
 	}
 
 
 	public void setDepartment(String department) {
-		Department = department;
+		this.department = department;
 	}
 	
 	
